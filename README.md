@@ -3,7 +3,7 @@ threex.noiseshadermaterial.js
 it provides a ```THREE.ShaderMaterial``` preconfigured to display 3d noise.
 all parameters are exposed. you can tweek them endlessly to fit your need.
 It is all procedural with perlin3d so no download, full random.
-released under MIT license.
+released under MIT license. 
 
 Here is the basic example 
 [live](http://jeromeetienne.github.io/threex/src/threex.noiseshadermaterial/examples/basic.html)
