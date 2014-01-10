@@ -121,10 +121,10 @@ THREEx.NoiseShaderMaterial.noiseFragmentShader	= [
 
 THREEx.NoiseShaderMaterial.fragmentShader	= [
 	THREEx.NoiseShaderMaterial.noiseFragmentShader,
-	'',
+
 	'uniform float time;',
-	'varying vec2 vUv;',
-	'',
+	'varying vec2  vUv;',
+
 	'float surface3( vec3 coord ){',
 	'	float height	= 0.0;',
 	'	height	+= abs(snoise(coord      )) * 1.0;',
@@ -133,7 +133,7 @@ THREEx.NoiseShaderMaterial.fragmentShader	= [
 	'	height	+= abs(snoise(coord * 8.0)) * 0.125;',
 	'	return height;',
 	'}',
-	'',
+
 	'void main( void ) {',
 	'	vec3 coord	= vec3( vUv, time );',
 	'	float height	= surface3( coord );',
